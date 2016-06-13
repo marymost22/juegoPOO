@@ -1,0 +1,69 @@
+=================================|MANUAL DE AYUDA|=================================
+
+•ENTORNO:
+      - El mapa está formado por una serie de celdas representadas en ASCCI. 
+      - Cada celda puede contener uno o varios objetos y enemigos.
+      - Existen  celdas no transitables por las que ni tu ni los enemigos podréis pasar. Se representan mediante el caracter '#'.
+      - Las coordenadas del mapa siguen el formato 'XA'.
+      - X es un entero con valores que comienzan en 0 y aumentan secuencialmente hasta llegar a la coordenada final del mapa.
+      - A es una letra que comienza en 'a' y se extiende en orden alfabético hasta la coordenada final del mapa.
+
+•JUGADOR: 
+      - Aparecerás inicialmente en la coordenada (0,A) representado por el caracter '@'.
+      - Tienes un rango de visión predeterminado. No podrás ver que hay en toda aquella celda que esté fuera de dicho rango. Las celdas fuera de rango se representan por '*'.
+      - Podrás atacar a cualquier enemigo que esté dentro del rango de visión.
+      - Tu objetivo es acabar con todos los enemigos antes de que ellos acaben contigo.
+      - Solo te podrás mover a una de las cuatro celdas adyacentes a tu posición actual.
+      - Desde el incio del juego tienes una mochila en la que podrás guardar cualquier objeto siempre que puedas cargar con él o quepa dentro.
+
+•ENEMIGOS: 
+      - Los enemigos se distribuyen aleatoriamente por el mapa, se identifican por el caracter 'X'.
+      - Los enemigos también tienen un rango de visión predeterminado. Este rango, será menor que el tuyo.
+      - Los enemigos solo podrán atacarte si estás en su rango de visión. Mientras no te encuentren, se moverán aleatoriamente, recogiendo todo lo que encuentren.
+
+•OBJETOS: 
+      - En el mapa podrás encontrar armas, armaduras, binoculares y botiquines.
+      - Cada uno tiene propiedades especificas.
+      - Para saber más información de cada uno utiliza el comando MIRAR.
+
+•LISTA DE COMANDOS:
+
+      - Mover XA -> Mueve el jugador a la coordenada XA.
+            Nota: XA debe ser adyacente a la posición actual.
+      
+      - Mirar -> Muestra una lista de objetos (si los hay) que se encuentran en la celda en la que se ubica el jugador.
+
+      - Mirar nombreObjeto -> Muestra una descripcion detallada del objeto. Solo funciona para objetos que estén en la celda en la que está ubicado el jugador.
+      
+      - Mirar XA -> Muestra una lusta de los enemigos (si los hay) que se encuentran en la coordenda XA.
+
+      - Mirar XA nombreEnemigo -> Si "nombreEnemigo" es un enemigo, muestra una descipción detallada del enemigo que se encuentra en la coordenada XA.
+
+      - Mochila -> Muestra el contenido actual de la mochila del jugador asi como las armadura o armas que se tienen equipadas.
+      
+      - Guardar nombreObjeto -> Si 'nombreObjeto' es el nombre de un objeto que se encuentre en la celda actual, se guarda en la mochila. 
+
+      - Guardar todo -> Guarda todo el contenido de una celda en la mochila (hasta que no quepa más).
+
+      - Sacar nombreObjeto -> Si 'nombreObjeto' es el nombre de un objeto que se encuentre actualmente en la mochila, se saca de ésta y se deposita en la celda actual.
+      
+      - Equipar nombreObjeto -> Si 'nombreObjeto' es un objeto equipable presente en tu mochila o en la celda actual, se equipará.
+      
+      - Usar nombreObjeto -> Si 'nombreObjeto' es botiquin presente en tu mochila o en la celda actual, se usara causando efecto en tu salud.
+
+      - Desequipar nombreObjeto ->  Si nombreObjeto es un objeto que esté equipado actualmente, se guarda en la mochila si es que cabe.
+      
+      
+      - Atacar XA -> Ataca a todos los enemigos que se encuentran en la coordenada XA, si está en tu rango de visión.
+
+      - Atacar XA nombreEnemigo -> Si "nombreEnemigo" es un enemigo en la celda XA, se le ataca.
+
+      - Mapa -> Imprime el mapa. 
+
+      - Pasar -> Pasa el turno.
+      
+      - Ayuda -> Muestra este manual.
+      
+      - Salir -> Termina el juego.
+
+  
